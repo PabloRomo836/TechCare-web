@@ -1,47 +1,43 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
+import "./header.css"
 
 function Header() {
-  const [active, setActive] = useState("inicio")
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["inicio", "techcare", "habilidades", "cv", "portfolio"]
-      let current = "inicio"
-
-      sections.forEach((id) => {
-        const section = document.getElementById(id)
-        if (section) {
-          const top = section.offsetTop
-          if (window.scrollY >= top - 100) {
-            current = id
-          }
-        }
-      })
-
-      setActive(current)
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  const [open, setOpen] = useState(false)
 
   return (
-    <header>
-      <h1>TechCare</h1>
-      <p>Soporte técnico informático · Mantenimiento y optimización</p>
+    <header className="header">
+      <div className="header-top">
+        <h1>TechCare</h1>
+        <button
+          className="menu-btn"
+          onClick={() => setOpen(!open)}
+          aria-label="Abrir menú"
+        >
+          ☰
+        </button>
+      </div>
 
-      <nav>
-        <a href="#inicio" className={active === "inicio" ? "active" : ""}>Inicio</a>
-        <a href="#techcare" className={active === "techcare" ? "active" : ""}>Servicios</a>
-        <a href="#habilidades" className={active === "habilidades" ? "active" : ""}>Habilidades</a>
-        <a href="#cv" className={active === "cv" ? "active" : ""}>CV</a>
-        <a href="#portfolio" className={active === "portfolio" ? "active" : ""}>Portafolio</a>
+      <p className="subtitle">
+        Soporte técnico informático · Mantenimiento y optimización
+      </p>
+
+      <nav className={`nav ${open ? "open" : ""}`}>
+        <a href="#inicio" onClick={() => setOpen(false)}>Inicio</a>
+        <a href="#techcare" onClick={() => setOpen(false)}>Servicios</a>
+        <a href="#habilidades" onClick={() => setOpen(false)}>Habilidades</a>
+        <a href="#cv" onClick={() => setOpen(false)}>CV</a>
+        <a href="#portfolio" onClick={() => setOpen(false)}>Portafolio</a>
       </nav>
     </header>
   )
 }
 
 export default Header
+
+
+
+
+
 
 
 

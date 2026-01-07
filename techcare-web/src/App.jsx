@@ -1,28 +1,37 @@
-import Header from "./components/Header"
-import Intro from "./components/Intro"
-import TechCare from "./components/TechCare"
-import Skills from "./components/Skills"
-import CV from "./components/CV"
-import Portfolio from "./components/Portfolio"
+import Header from "./Header"
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Header />
-      <Intro />
-      <TechCare />
-      <Skills />
-      <CV />
-      <Portfolio />
 
-      <footer>
-        <p>© TechCare - Soporte técnico informático</p>
-      </footer>
+      <main>
+        <section id="inicio">
+          <h2>Inicio</h2>
+        </section>
+
+        <section id="techcare">
+          <h2>Servicios</h2>
+        </section>
+
+        <section id="habilidades">
+          <h2>Habilidades</h2>
+        </section>
+
+        <section id="cv">
+          <h2>CV</h2>
+        </section>
+
+        <section id="portfolio">
+          <h2>Portafolio</h2>
+        </section>
+      </main>
     </div>
   )
 }
 
 export default App
+
 
 
 
