@@ -1,6 +1,7 @@
 function Portfolio() {
   return (
-    <section id="portfolio">
+    <section id="portafolio" className="section">
+
 
       <p>
         Algunos trabajos realizados de forma independiente, enfocados en la

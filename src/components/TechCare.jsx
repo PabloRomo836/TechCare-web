@@ -1,6 +1,6 @@
 function TechCare() {
   return (
-    <section id="techcare" className="section-techcare">
+    <section id="TechCare" className="sectionTechCare">
       <h2>Servicios TechCare</h2>
 
       <div className="services-container">
