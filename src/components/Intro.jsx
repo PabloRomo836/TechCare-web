@@ -1,6 +1,6 @@
 function Intro() {
   return (
-    <section id="inicio">
+    <section id="inicio" className="section">
       <h2>Sobre mí</h2>
 
       <p>
@@ -18,4 +18,5 @@ function Intro() {
 }
 
 export default Intro
+
 
