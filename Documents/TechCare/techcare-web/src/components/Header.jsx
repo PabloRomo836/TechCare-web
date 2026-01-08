@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "./Header.css"
+import Header from "./Header.jsx"
 
 function Header() {
   const [open, setOpen] = useState(false)
