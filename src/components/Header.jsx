@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./Header.css"
 
 function Header() {
   const [open, setOpen] = useState(false)
@@ -7,6 +8,7 @@ function Header() {
     <header className="header">
       <div className="header-top">
         <h1>TechCare</h1>
+
         <button
           className="menu-btn"
           onClick={() => setOpen(!open)}
@@ -22,7 +24,7 @@ function Header() {
 
       <nav className={`nav ${open ? "open" : ""}`}>
         <a href="#inicio" onClick={() => setOpen(false)}>Inicio</a>
-        <a href="#techcare" onClick={() => setOpen(false)}>Servicios</a>
+        <a href="#servicios" onClick={() => setOpen(false)}>Servicios</a>
         <a href="#habilidades" onClick={() => setOpen(false)}>Habilidades</a>
         <a href="#cv" onClick={() => setOpen(false)}>CV</a>
         <a href="#portfolio" onClick={() => setOpen(false)}>Portafolio</a>
@@ -32,6 +34,7 @@ function Header() {
 }
 
 export default Header
+
 
 
 
