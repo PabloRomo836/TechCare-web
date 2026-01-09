@@ -2,7 +2,7 @@ function Skills() {
   return (
     <section id="habilidades" className="section">
 
-      <h2>Habilidades</h2>
+      <h2>Habilidades Técnicas</h2>
 
       <p>
         <strong>Hardware:</strong> diagnóstico, mantenimiento y reemplazo de componentes.<br />

@@ -1,8 +1,6 @@
-
 * {
   box-sizing: border-box;
 }
-
 
 html,
 body {
@@ -18,10 +16,12 @@ body {
 }
 
 
+
 .header {
   width: 100%;
   text-align: center;
 }
+
 
 
 .nav {
@@ -51,4 +51,175 @@ body {
 }
 
 
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: #111;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section h3 {
+  margin-top: 1.5rem;
+}
+
+.section p,
+.section li {
+  line-height: 1.6;
+  text-align: center;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto;
+}
+
+
+
+#cv ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem auto;
+}
+
+#cv li {
+  margin: 0.6rem 0;
+}
+
+.cv-downloads {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.cv-downloads a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1f2a33;
+}
+
+
+
+.footer-dark {
+  background: #1f2a33;
+  color: #fff;
+  padding: 3rem 1.5rem;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-item {
+  flex: 1;
+}
+
+.footer-item.left {
+  text-align: left;
+}
+
+.footer-item.center {
+  text-align: center;
+}
+
+.footer-item.right {
+  text-align: right;
+}
+
+.footer-logo {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-title {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.footer-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-link.whatsapp {
+  color: #25d366;
+}
+
+.footer-link.instagram {
+  color: #c13584;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  font-size: 1.9rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.05);
+}
+
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-item.left,
+  .footer-item.right {
+    text-align: center;
+  }
+
+  .cv-downloads {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 

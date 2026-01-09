@@ -1,6 +1,6 @@
 function TechCare() {
   return (
-    <section id="TechCare" className="sectionTechCare">
+    <section id="servicios" className="section">
       <h2>Servicios TechCare</h2>
 
       <div className="services-container">
@@ -8,14 +8,17 @@ function TechCare() {
           <span className="service-icon">🖥</span>
           Optimización de PC de escritorio
         </div>
+
         <div className="service-card">
           <span className="service-icon">💻</span>
           Instalación y configuración de Windows
         </div>
+
         <div className="service-card">
           <span className="service-icon">💾</span>
           Clonado y migración a SSD
         </div>
+
         <div className="service-card">
           <span className="service-icon">🌐</span>
           Asistencia remota y soporte técnico
@@ -26,6 +29,7 @@ function TechCare() {
 }
 
 export default TechCare
+
 
 
 
