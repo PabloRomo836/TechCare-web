@@ -1,8 +1,10 @@
 import { useState } from "react"
-import logoNuevo from "../assets/logos/logo.jpg" 
 
 function Header({ idioma, toggleLanguage }) {
   const [open, setOpen] = useState(false)
+  
+  
+  const repoPath = "/TechCare-web/";
 
   const textos = {
     es: { 
@@ -43,10 +45,10 @@ function Header({ idioma, toggleLanguage }) {
       </div>
 
       <div className="header-right">
-        <img src={logoNuevo} alt="Logo TechCare" className="header-mini-logo" />
+       
+        <img src={`${repoPath}logo.jpg`} alt="Logo TechCare" className="header-mini-logo" />
       </div>
 
-      
       <div className={`side-panel ${open ? "open" : ""}`}>
         <button className="close-menu" onClick={() => setOpen(false)}>✕</button>
         <nav>
@@ -62,7 +64,6 @@ function Header({ idioma, toggleLanguage }) {
         </nav>
       </div>
 
-    
       {open && <div className="overlay" onClick={() => setOpen(false)}></div>}
     </header>
   )

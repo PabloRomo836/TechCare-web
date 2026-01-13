@@ -5,7 +5,6 @@ function Galeria({ idioma }) {
     ? { titulo: "Recent Work" } 
     : { titulo: "Trabajos Realizados" };
 
- e
   const repoPath = "/TechCare-web/";
 
   const items = [
@@ -15,7 +14,7 @@ function Galeria({ idioma }) {
     { type: 'image', url: 'limpieza-hardware-profesional.jpeg' },
     { type: 'image', url: 'mantenimiento-fuente-pc.jpeg' },
     { type: 'image', url: 'herramientas-de-trabajo.jpeg' },
-    { type: 'image', url: 'Combo-Actualización-303-263n-pc.jpeg' },
+    { type: 'image', url: 'Combo-Actualización-pc.jpeg' },
     { type: 'image', url: 'Cartel-TechCare.jpeg' },
     { type: 'image', url: 'Armado-de-pc.jpg' },
   ];
@@ -51,3 +50,4 @@ function Galeria({ idioma }) {
 }
 
 export default Galeria;
+
