@@ -28,13 +28,14 @@ function CV({ idioma }) {
       </p>
 
       <div className="cv-container">
-        <a href="/PabloRomoCV_ES.pdf" download className="cv-card">
+     
+        <a href="PabloRomoCV_ES.pdf" download="PabloRomoCV_ES.pdf" className="cv-card">
           <span className="cv-icon">📄</span>
           <span className="cv-name">{t.langEs}</span>
           <span className="cv-download-text">{t.descargar}</span>
         </a>
 
-        <a href="/PabloRomoCV_EN.pdf" download className="cv-card">
+        <a href="PabloRomoCV_EN.pdf" download="PabloRomoCV_EN.pdf" className="cv-card">
           <span className="cv-icon">📄</span> 
           <span className="cv-name">{t.langEn}</span>
           <span className="cv-download-text">{t.descargar}</span>
