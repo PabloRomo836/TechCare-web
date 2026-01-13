@@ -1,53 +1,69 @@
 import { useState } from "react"
-import "./Header.css"
+import logoNuevo from "../assets/logos/logo.jpg" 
 
-import logoLeft from "../assets/logos/logo-izquierdo.jpg"
-import logoRight from "../assets/logos/logo-derecho.jpg"
-
-function Header() {
+function Header({ idioma, toggleLanguage }) {
   const [open, setOpen] = useState(false)
 
+  const textos = {
+    es: { 
+      inicio: "Inicio", 
+      servicios: "Servicios", 
+      habilidades: "Habilidades", 
+      cv: "CV", 
+      portafolio: "Portafolio", 
+      galeria: "Galería", 
+      lang: "English" 
+    },
+    en: { 
+      inicio: "Home", 
+      servicios: "Services", 
+      habilidades: "Skills", 
+      cv: "Resume", 
+      portafolio: "Portfolio", 
+      galeria: "Gallery", 
+      lang: "Español" 
+    }
+  };
+
+  const t = textos[idioma || 'es'];
+
   return (
-    <header className="header">
-
-      {}
-      <div className="header-container">
-
-        <div className="header-side">
-          <img src={logoLeft} alt="Logo izquierdo" className="header-logo" />
-        </div>
-
-        <div className="header-center">
-          <h1>TechCare</h1>
-          <p className="subtitle">
-            Soporte técnico informático · Mantenimiento y optimización
-          </p>
-        </div>
-
-        <div className="header-side">
-          <img src={logoRight} alt="Logo derecho" className="header-logo" />
-        </div>
-
+    <header className="main-header">
+      <div className="header-left">
+        <button className="menu-toggle" onClick={() => setOpen(!open)} aria-label="Menu">
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </button>
       </div>
 
-      {}
-      <button
-        className="menu-btn"
-        onClick={() => setOpen(!open)}
-        aria-label="Abrir menú"
-      >
-        ☰
-      </button>
+      <div className="header-center">
+         <h1>    TechCare </h1>
+        <p className="subtitle-header"> Soporte técnico informático </p>
+      </div>
 
-      {}
-      <nav className={`nav ${open ? "open" : ""}`}>
-        <a href="#inicio" onClick={() => setOpen(false)}>Inicio</a>
-        <a href="#servicios" onClick={() => setOpen(false)}>Servicios</a>
-        <a href="#habilidades" onClick={() => setOpen(false)}>Habilidades</a>
-        <a href="#cv" onClick={() => setOpen(false)}>CV</a>
-        <a href="#portfolio" onClick={() => setOpen(false)}>Portafolio</a>
-      </nav>
+      <div className="header-right">
+        <img src={logoNuevo} alt="Logo TechCare" className="header-mini-logo" />
+      </div>
 
+      
+      <div className={`side-panel ${open ? "open" : ""}`}>
+        <button className="close-menu" onClick={() => setOpen(false)}>✕</button>
+        <nav>
+          <a href="#sobre-mi" onClick={() => setOpen(false)}>{t.inicio}</a>
+          <a href="#servicios" onClick={() => setOpen(false)}>{t.servicios}</a>
+          <a href="#habilidades" onClick={() => setOpen(false)}>{t.habilidades}</a>
+          <a href="#portafolio" onClick={() => setOpen(false)}>{t.portafolio}</a>
+          <a href="#galeria" onClick={() => setOpen(false)}>{t.galeria}</a> 
+          <a href="#cv" onClick={() => setOpen(false)}>{t.cv}</a>
+          <button className="lang-btn-nav" onClick={() => { toggleLanguage(); setOpen(false); }}>
+            🌐 {t.lang}
+          </button>
+        </nav>
+      </div>
+
+    
+      {open && <div className="overlay" onClick={() => setOpen(false)}></div>}
     </header>
   )
 }
