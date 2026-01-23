@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 
 function Galeria({ idioma }) {
   const t = idioma === 'en' 
@@ -14,7 +14,7 @@ function Galeria({ idioma }) {
     { type: 'image', url: 'limpieza-hardware-profesional.jpeg' },
     { type: 'image', url: 'mantenimiento-fuente-pc.jpeg' },
     { type: 'image', url: 'herramientas-de-trabajo.jpeg' },
-    { type: 'image', url: 'Combo-Actualización-pc.jpeg' },
+    { type: 'image', url: 'combo-actualización-pc.jpeg' },
     { type: 'image', url: 'Cartel-TechCare.jpeg' },
     { type: 'image', url: 'Armado-de-pc.jpg' },
   ];
@@ -22,6 +22,7 @@ function Galeria({ idioma }) {
   return (
     <section id="galeria" className="section">
       <h2>{t.titulo}</h2>
+
       <div className="galeria-grid">
         {items.map((item, i) => (
           <div key={i} className="galeria-item">
@@ -32,14 +33,16 @@ function Galeria({ idioma }) {
                 loading="lazy" 
               />
             ) : (
-              <video 
-                src={`${repoPath}${item.url}`} 
-                controls 
-                muted 
-                preload="metadata"
-                onMouseOver={e => e.target.play()}
-                onMouseOut={e => e.target.pause()}
-                playsInline
+             <video 
+              src={`${repoPath}${item.url}`} 
+              controls
+              preload="metadata"
+              playsInline
+              onMouseEnter={e => e.target.play()}
+              onMouseLeave={e => {
+              e.target.pause();
+              e.target.currentTime = 0;
+                }}
               />
             )}
           </div>
@@ -50,4 +53,6 @@ function Galeria({ idioma }) {
 }
 
 export default Galeria;
+
+
 

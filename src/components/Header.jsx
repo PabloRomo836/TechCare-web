@@ -3,7 +3,7 @@ import { useState } from "react"
 function Header({ idioma, toggleLanguage }) {
   const [open, setOpen] = useState(false)
   
-  
+ 
   const repoPath = "/TechCare-web/";
 
   const textos = {
@@ -45,8 +45,12 @@ function Header({ idioma, toggleLanguage }) {
       </div>
 
       <div className="header-right">
-       
-        <img src={`${repoPath}logo.jpg`} alt="Logo TechCare" className="header-mini-logo" />
+        {}
+        <img 
+          src={`${repoPath}logo.jpeg`} 
+          alt="Logo TechCare" 
+          className="header-mini-logo" 
+        />
       </div>
 
       <div className={`side-panel ${open ? "open" : ""}`}>

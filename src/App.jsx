@@ -25,7 +25,7 @@ function App() {
         <TechCare idioma={idioma} />
         <Skills idioma={idioma} />
         <Portafolio idioma={idioma} />
-        <Galeria idioma={idioma} /> {/* <-- La agregamos aquí */}
+        <Galeria idioma={idioma} /> {}
         <CV idioma={idioma} />
         <Contact idioma={idioma} />
       </main>
