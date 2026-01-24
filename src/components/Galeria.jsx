@@ -14,7 +14,6 @@ function Galeria({ idioma }) {
     { type: 'image', url: 'limpieza-hardware-profesional.jpeg' },
     { type: 'image', url: 'mantenimiento-fuente-pc.jpeg' },
     { type: 'image', url: 'herramientas-de-trabajo.jpeg' },
-    { type: 'image', url: 'combo-actualización-pc.jpeg'},
     { type: 'image', url: 'Cartel-TechCare.jpeg' },
     { type: 'image', url: 'Armado-de-pc.jpg' },
   ];
