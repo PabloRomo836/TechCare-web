@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from "./components/Header";
 import Intro from "./components/Intro";
@@ -37,21 +36,5 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
