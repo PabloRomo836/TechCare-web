@@ -46,7 +46,7 @@ function Header({ idioma, toggleLanguage }) {
 
       <div className="header-right">
        
-        <img src={`${repoPath}logo.jpg`} alt="Logo TechCare" className="header-mini-logo" />
+        <img src={`${repoPath}logo.jpeg`} alt="logo" className="header-mini-logo" />
       </div>
 
       <div className={`side-panel ${open ? "open" : ""}`}>
