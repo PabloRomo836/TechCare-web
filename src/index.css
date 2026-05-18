@@ -112,7 +112,6 @@ body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1a20
   width: 100%; height: 100%; object-fit: cover;
 }
 
-
 .footer { 
   background: var(--bg-dark); 
   color: white; 
@@ -133,13 +132,25 @@ body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1a20
 .instagram-color:hover svg { fill: #E4405F; }
 
 @media (max-width: 768px) {
- 
   .footer { height: 60px; padding: 0 20px; }
   .footer-inner { flex-direction: row; gap: 10px; justify-content: space-between; text-align: center; }
   .footer-text { font-size: 0.7rem; }
   
   .galeria-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
   .portfolio-grid { grid-template-columns: 1fr; }
+}
+
+
+.about-flyer-img {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border: 2px solid transparent; 
+  transition: all 0.3s ease-in-out;
+}
+
+.about-flyer-img:hover {
+  border-color: var(--primary); 
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.4); 
+  transform: translateY(-5px); 
 }
 
 
