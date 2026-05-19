@@ -21,24 +21,32 @@ function Intro({ idioma }) {
   const flyerPath = `${import.meta.env.BASE_URL}WhatsApp Image 2026-05-12 at 11.54.47.jpeg`;
   
   return (
-    <section id="sobre-mi" className="section">
-      <h2>{t.titulo}</h2>
-      <div className="about-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', alignItems: 'center' }}>
+    <section id="sobre-mi" className="section intro-section">
+      
+      <div className="intro-glow-1"></div>
+      <div className="intro-glow-2"></div>
+
+      <h2 className="intro-title">{t.titulo}</h2>
+      
+      <div className="about-container">
         
-        <div className="about-card" style={{ flex: '1 1 450px', margin: '0' }}>
-          <div className="about-content">
-            <p className="about-text">{t.p1}</p>
-            <p className="about-text" dangerouslySetInnerHTML={{ __html: t.p2 }}></p>
-            <div className="about-badges">
-              {t.badges.map((badge, i) => (
-                <span key={i} className="badge">{badge}</span>
-              ))}
+       
+        <div className="about-card-wrapper">
+          <div className="about-card">
+            <div className="about-content">
+              <p className="about-text">{t.p1}</p>
+              <p className="about-text" dangerouslySetInnerHTML={{ __html: t.p2 }}></p>
+              <div className="about-badges">
+                {t.badges.map((badge, i) => (
+                  <span key={i} className="badge">{badge}</span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
-        
-        <div className="about-flyer" style={{ flex: '1 1 300px', display: 'flex', justifyContent: 'center' }}>
+       
+        <div className="about-flyer-wrapper">
           <img 
             src={flyerPath} 
             alt="TechCare Servicio Técnico a Domicilio" 
