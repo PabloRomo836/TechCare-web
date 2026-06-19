@@ -18,19 +18,14 @@ function Intro({ idioma }) {
 
   const t = textos[idioma || 'es'];
   
-  const flyerPath = `${import.meta.env.BASE_URL}WhatsApp Image 2026-05-12 at 11.54.47.jpeg`;
-  
   return (
     <section id="sobre-mi" className="section intro-section">
-      
       <div className="intro-glow-1"></div>
       <div className="intro-glow-2"></div>
 
       <h2 className="intro-title">{t.titulo}</h2>
       
       <div className="about-container">
-        
-       
         <div className="about-card-wrapper">
           <div className="about-card">
             <div className="about-content">
@@ -44,23 +39,6 @@ function Intro({ idioma }) {
             </div>
           </div>
         </div>
-
-       
-        <div className="about-flyer-wrapper">
-          <img 
-            src={flyerPath} 
-            alt="TechCare Servicio Técnico a Domicilio" 
-            className="about-flyer-img"
-            style={{ 
-              maxWidth: '100%', 
-              height: 'auto', 
-              borderRadius: '15px', 
-              maxHeight: '450px',
-              objectFit: 'contain'
-            }} 
-          />
-        </div>
-
       </div>
     </section>
   );
