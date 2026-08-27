@@ -28,14 +28,13 @@ function CV({ idioma }) {
       </p>
 
       <div className="cv-container">
-     
-        <a href="PabloRomoCV_ES.pdf" download="PabloRomoCV_ES.pdf" className="cv-card">
+        <a href="AdministrativoCV.pdf" download="AdministrativoCV.pdf" className="cv-card">
           <span className="cv-icon">📄</span>
           <span className="cv-name">{t.langEs}</span>
           <span className="cv-download-text">{t.descargar}</span>
         </a>
 
-        <a href="PabloRomoCV_EN.pdf" download="PabloRomoCV_EN.pdf" className="cv-card">
+        <a href="Pablo_RomoCV.pdf" download="Pablo_RomoCV.pdf" className="cv-card">
           <span className="cv-icon">📄</span> 
           <span className="cv-name">{t.langEn}</span>
           <span className="cv-download-text">{t.descargar}</span>
@@ -46,5 +45,7 @@ function CV({ idioma }) {
 }
 
 export default CV;
+
+
 
 
