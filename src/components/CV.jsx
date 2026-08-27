@@ -6,15 +6,15 @@ function CV({ idioma }) {
       titulo: "Experiencia y CV",
       subtitulo: "Haga clic en el documento para descargar",
       descargar: "Descargar PDF",
-      langEs: "Español",
-      langEn: "Inglés"
+      langEs: "Administrativo",
+      langEn: "Soporte Técnico"
     },
     en: {
       titulo: "Experience & Resume",
       subtitulo: "Click on the document to download",
       descargar: "Download PDF",
-      langEs: "Spanish",
-      langEn: "English"
+      langEs: "administrative",
+      langEn: "IT Technical Support"
     }
   };
 
