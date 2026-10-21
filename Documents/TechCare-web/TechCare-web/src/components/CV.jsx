@@ -45,6 +45,6 @@ function CV({ idioma }) {
   );
 }
 
-export default CV;
+export default CV;  
 
 
