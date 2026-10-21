@@ -5,14 +5,14 @@ function Contact({ idioma }) {
     es: {
       titulo: "Contacto",
       zonaLabel: "Zona de cobertura",
-      zonaValue: "Jesús María, Córdoba, Argentina",
+      zonaValue: "B° Pedro Oñate, Jesús María, Córdoba, Argentina",
       horarioLabel: "Horario de Atención",
       horarioValue: "Lun a Sáb: 10:00 a 18:00 hs"
     },
     en: {
       titulo: "Contact",
       zonaLabel: "Service Area",
-      zonaValue: "Jesús María, Córdoba, Argentina",
+      zonaValue: "B° Pedro Oñate, Jesús María, Córdoba, Argentina",
       horarioLabel: "Business Hours",
       horarioValue: "Mon to Sat: 10:00 AM to 6:00 PM"
     }
@@ -47,3 +47,4 @@ function Contact({ idioma }) {
 }
 
 export default Contact;     
+
