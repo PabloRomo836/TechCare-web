@@ -16,9 +16,9 @@ function Galeria({ idioma }) {
     { type: 'image', url: 'herramientas-de-trabajo.jpeg' },
     { type: 'image', url: 'combo-actualizacion-pc.jpeg' },
     { type: 'image', url: 'Armado-de-pc.jpg' },
-    [type: 'image', url: 'WhatsApp Video 2026-03-30 at 15.32.30'],  
+    { type: 'image', url: 'WhatsApp Video 2026-03-30 at 15.32.30'} ,  
   
-  ];
+  ]; 
 
   return (
     <section id="galeria" className="section">
