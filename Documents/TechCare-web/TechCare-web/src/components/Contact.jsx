@@ -46,4 +46,4 @@ function Contact({ idioma }) {
   );
 }
 
-export default Contact;   
+export default Contact;     
