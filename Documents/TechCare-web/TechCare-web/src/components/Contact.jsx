@@ -47,4 +47,3 @@ function Contact({ idioma }) {
 }
 
 export default Contact;      
-
