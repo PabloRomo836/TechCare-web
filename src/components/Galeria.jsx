@@ -16,7 +16,7 @@ function Galeria({ idioma }) {
     { type: 'image', url: 'herramientas-de-trabajo.jpeg' },
     { type: 'image', url: 'combo-actualizacion-pc.jpeg' },
     { type: 'image', url: 'Armado-de-pc.jpg' },
-      
+    { type: 'image', url: 'Reel TechCare PC.mp4' }
   
   ];   
 
