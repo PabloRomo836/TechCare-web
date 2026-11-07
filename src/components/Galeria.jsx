@@ -34,12 +34,12 @@ function Galeria({ idioma }) {
               />
             ) : (
               <video
-                src={`${repoPath}${item.url}`}
-                controls
-                muted
-                playsInline
-                preload="metadata"
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              src={`${repoPath}${item.url}`}
+              controls
+              muted
+              playsInline
+              preload="metadata"
+
               />
             )}
           </div>
