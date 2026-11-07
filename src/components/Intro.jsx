@@ -43,8 +43,8 @@ function Intro({ idioma }) {
     </section>
   );
 }
-
-
+ 
+export default Intro; 
 
 
 
