@@ -7,8 +7,7 @@ function Galeria({ idioma }) {
 
   const repoPath = "/TechCare-web/";
 
-  
-   const items = [
+  const items = [
     { type: 'video', url: 'soporte-tecnico-cordoba.mp4' },
     { type: 'video', url: 'reparacion-notebooks-expert.mp4' },
     { type: 'image', url: 'reparacion-placa-madre.jpeg' },
@@ -19,8 +18,8 @@ function Galeria({ idioma }) {
     { type: 'video', url: 'Reel TechCare PC.mp4' },
     { type: 'image', url: 'Mantenimiento PC.jpg' },
     { type: 'image', url: 'Setup Primer plano.jpeg' }
-  ];  
-  
+  ];
+
   return (
     <section id="galeria" className="section">
       <h2>{t.titulo}</h2>
@@ -40,6 +39,7 @@ function Galeria({ idioma }) {
                 muted
                 playsInline
                 preload="metadata"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             )}
           </div>
@@ -49,7 +49,7 @@ function Galeria({ idioma }) {
   );
 }
 
-export default Galeria;  
+export default Galeria;   
 
 
 
