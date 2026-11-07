@@ -16,7 +16,6 @@ function Galeria({ idioma }) {
     { type: 'image', url: 'herramientas-de-trabajo.jpeg' },
     { type: 'image', url: 'combo-actualizacion-pc.jpeg' },
     { type: 'video', url: 'Reel TechCare PC.mp4' },
-    { type: 'image', url: 'Mantenimiento PC.jpg' },
     { type: 'image', url: 'Setup Primer plano.jpeg' }
   ];
 
