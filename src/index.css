@@ -216,7 +216,7 @@ body {
   box-shadow: 0 8px 15px rgba(37, 211, 102, 0.2);
 }
 
-.portfolio-grid, .services-grid, .cv-container, .galeria-grid {
+.portfolio-grid, .services-grid, .cv-container {
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px; margin-top: 20px;
@@ -239,12 +239,33 @@ body {
 }
 .portfolio-link:hover { background: var(--primary); color: #1f2a33; }
 
-.galeria-item {
-  height: 250px; border-radius: 10px; overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
-.galeria-item img, .galeria-item video {
-  width: 100%; height: 100%; object-fit: cover;
+
+.galeria-item {
+  height: 250px; 
+  border-radius: 10px; 
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: var(--bg-dark);
+  position: relative;
+}
+
+.galeria-item img, 
+.galeria-item video {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  display: block;
+}
+
+.galeria-item img:not([src]), 
+.galeria-item img[src=""] {
+  opacity: 0;
 }
 
 
@@ -367,6 +388,7 @@ body {
   z-index: -1;
 }
 
+
 @media (max-width: 768px) {
   .intro-section {
     padding: 30px 15px;
@@ -382,4 +404,4 @@ body {
   .portfolio-grid { grid-template-columns: 1fr; }
 }
 
-
+ 
