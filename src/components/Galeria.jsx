@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 function Galeria({ idioma }) {
@@ -8,7 +9,7 @@ function Galeria({ idioma }) {
   const repoPath = "/TechCare-web/";
 
   const items = [
-    { type: 'video', url: 'soporte-tecnico-cordoba.mp4' },
+    { type: 'video', url: 'soporte-tecnico-cordoba.mp4', } , 
     { type: 'video', url: 'reparacion-notebooks-expert.mp4' },
     { type: 'image', url: 'reparacion-placa-madre.jpeg' },
     { type: 'image', url: 'limpieza-hardware-profesional.jpeg' },
@@ -16,13 +17,13 @@ function Galeria({ idioma }) {
     { type: 'image', url: 'herramientas-de-trabajo.jpeg' },
     { type: 'image', url: 'combo-actualizacion-pc.jpeg' },
     { type: 'video', url: 'Reel TechCare PC.mp4' },
-    { type: 'image', url: 'Mantenimiento PC.jpg' }   
-    
-    ];
+    { type: 'image', url: 'Mantenimiento PC.jpg' }
+  ];
 
   return (
     <section id="galeria" className="section">
       <h2>{t.titulo}</h2>
+
       <div className="galeria-grid">
         {items.map((item, i) => (
           <div key={i} className="galeria-item">
@@ -33,13 +34,13 @@ function Galeria({ idioma }) {
                 loading="lazy"
               />
             ) : (
-           <video
-           src={`${repoPath}${item.url}`}
-           controls
-           muted
-           playsInline
-           preload="metadata"
-           />
+              <video
+                src={`${repoPath}${item.url}`}
+                controls
+                muted
+                playsInline
+                preload="metadata"
+              />
             )}
           </div>
         ))}
@@ -48,7 +49,8 @@ function Galeria({ idioma }) {
   );
 }
 
-export default Galeria;      
+export default Galeria;
+     
 
 
 
