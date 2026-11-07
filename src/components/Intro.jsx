@@ -44,7 +44,7 @@ function Intro({ idioma }) {
   );
 }
 
-export default Intro;
+
 
 
 
