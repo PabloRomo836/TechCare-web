@@ -33,14 +33,13 @@ function Galeria({ idioma }) {
                 loading="lazy"
               />
             ) : (
-              <video
-              src={`${repoPath}${item.url}`}
-              controls
-              muted
-              playsInline
-              preload="metadata"
-
-              />
+           <video
+           src={`${repoPath}${item.url}`}
+           controls
+           muted
+           playsInline
+           preload="metadata"
+           />
             )}
           </div>
         ))}
