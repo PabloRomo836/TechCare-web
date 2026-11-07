@@ -11,12 +11,11 @@ function Galeria({ idioma }) {
     { type: 'video', url: 'soporte-tecnico-cordoba.mp4' },
     { type: 'video', url: 'reparacion-notebooks-expert.mp4' },
     { type: 'image', url: 'reparacion-placa-madre.jpeg' },
-    { type: 'image', url: 'limpieza-hardware-profesional.jpg' },
+    { type: 'image', url: 'limpieza-hardware-profesional.jpeg' },
     { type: 'image', url: 'mantenimiento-fuente-pc.jpeg' },
     { type: 'image', url: 'herramientas-de-trabajo.jpeg' },
     { type: 'image', url: 'combo-actualizacion-pc.jpeg' },
     { type: 'video', url: 'Reel TechCare PC.mp4' },
-    { type: 'image', url: 'Setup Primer plano.jpeg'},
     { type: 'image', url: 'Mantenimiento PC.jpg' }   
     
     ];
