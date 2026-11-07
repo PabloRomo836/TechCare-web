@@ -1,24 +1,22 @@
 import React from 'react';
 
 function Galeria({ idioma }) {
-  const t = idioma === 'en' 
-    ? { titulo: "Recent Work" } 
+  const t = idioma === 'en'
+    ? { titulo: "Recent Work" }
     : { titulo: "Trabajos Realizados" };
 
   const repoPath = "/TechCare-web/";
 
   const items = [
-    { type: 'video', url: 'soporte-tecnico-cordoba.mp4' }, 
+    { type: 'video', url: 'soporte-tecnico-cordoba.mp4' },
     { type: 'video', url: 'reparacion-notebooks-expert.mp4' },
     { type: 'image', url: 'reparacion-placa-madre.jpeg' },
-    { type: 'image', url: 'limpieza-hardware-profesional.jpeg' },
+    { type: 'image', url: 'limpieza-hardware-profesional.jpg' },
     { type: 'image', url: 'mantenimiento-fuente-pc.jpeg' },
     { type: 'image', url: 'herramientas-de-trabajo.jpeg' },
     { type: 'image', url: 'combo-actualizacion-pc.jpeg' },
-    { type: 'image', url: 'Armado-de-pc.jpg' },
-    { type: 'image', url: 'Reel TechCare PC.mp4' }
-  
-  ];   
+    { type: 'video', url: 'Reel TechCare PC.mp4' }
+  ];
 
   return (
     <section id="galeria" className="section">
@@ -27,20 +25,18 @@ function Galeria({ idioma }) {
         {items.map((item, i) => (
           <div key={i} className="galeria-item">
             {item.type === 'image' ? (
-              <img 
-                src={`${repoPath}${item.url}`} 
-                alt="Servicio Técnico TechCare" 
-                loading="lazy" 
+              <img
+                src={`${repoPath}${item.url}`}
+                alt="Servicio Técnico TechCare"
+                loading="lazy"
               />
             ) : (
-              <video 
-                src={`${repoPath}${item.url}`} 
-                controls 
-                muted 
-                preload="metadata"
-                onMouseOver={e => e.target.play()}
-                onMouseOut={e => e.target.pause()}
+              <video
+                src={`${repoPath}${item.url}`}
+                controls
+                muted
                 playsInline
+                preload="metadata"
               />
             )}
           </div>
@@ -50,7 +46,7 @@ function Galeria({ idioma }) {
   );
 }
 
-export default Galeria;   
+export default Galeria;  
 
 
 
