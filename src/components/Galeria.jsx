@@ -16,8 +16,10 @@ function Galeria({ idioma }) {
     { type: 'image', url: 'herramientas-de-trabajo.jpeg' },
     { type: 'image', url: 'combo-actualizacion-pc.jpeg' },
     { type: 'video', url: 'Reel TechCare PC.mp4' },
-    { type: 'image', url: 'Setup Primer plano.jpeg' }
-  ];
+    { type: 'image', url: 'Setup Primer plano.jpeg'},
+    { type: 'image', url: 'Mantenimiento PC.jpg' }   
+    
+    ];
 
   return (
     <section id="galeria" className="section">
