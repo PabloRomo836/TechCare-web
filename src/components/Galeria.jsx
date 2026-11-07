@@ -48,7 +48,7 @@ function Galeria({ idioma }) {
   );
 }
 
-export default Galeria;     
+export default Galeria;      
 
 
 
